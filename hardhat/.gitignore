@@ -1,0 +1,17 @@
+# Ignore node modules
+node_modules/
+
+# Ignore build files
+artifacts/
+cache/
+
+# Ignore environment variable files
+.env
+
+# Ignore errors while hooking
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore Hardhat local node logs
+*.log
