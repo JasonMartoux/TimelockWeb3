@@ -9,6 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.0.0-beta.5"
+    "@astrojs/alpinejs": "^0.4.0",
+    "@astrojs/react": "^3.6.2",
+    "@types/alpinejs": "^3.13.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "alpinejs": "^3.14.3",
+    "astro": "^5.0.0-beta.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "thirdweb": "^5.64.2"
   }
 }
