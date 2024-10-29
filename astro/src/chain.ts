@@ -1,4 +1,4 @@
-import { defineChain } from "thirdweb";
-import { localhost } from "thirdweb/chains"
+import { defineChain } from 'thirdweb';
+import { localhost } from 'thirdweb/chains';
 
-export const chain = defineChain(localhost)
+export const chain = defineChain( localhost );
