@@ -1,14 +1,9 @@
 ---
 import { ThirdwebProvider } from "../thirdweb";
+import { client } from "../client";
 import { chain } from "../chain";
 
-interface Props {
-  title: string;
-}
-
 const { title } = Astro.props;
-
-console.log(ThirdwebProvider);
 ---
 
 <!doctype html>
@@ -22,7 +17,7 @@ console.log(ThirdwebProvider);
     <title>{title}</title>
   </head>
   <body>
-    <ThirdwebProvider>
+    <ThirdwebProvider client:only="react">
       <slot />
     </ThirdwebProvider>
   </body>

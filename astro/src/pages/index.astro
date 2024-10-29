@@ -8,7 +8,7 @@ import { chain } from "../chain";
 <Layout title="Welcome to Astro.">
   <div class="main">
     <h1 style="margin-bottom:20px ;">Accountability App</h1>
-    <ConnectEmbed client={client} chain={chain} />
+    <ConnectEmbed client:only="react" client={client} chain={chain} />
   </div>
 </Layout>
 
