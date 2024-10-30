@@ -1,7 +1,7 @@
 ---
-import { ThirdwebProvider } from "../thirdweb";
-import { client } from "../client";
-import { chain } from "../chain";
+interface Props {
+  title: string;
+}
 
 const { title } = Astro.props;
 ---
@@ -17,9 +17,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <ThirdwebProvider client:only="react">
-      <slot />
-    </ThirdwebProvider>
+    <slot />
   </body>
 </html>
 <style is:global>
