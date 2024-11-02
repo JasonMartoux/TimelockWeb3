@@ -58,6 +58,10 @@ contract AccountabilityContract {
       }
     }
 
+    function getTasksCount() public view returns (uint256) {
+      return tasks.length;
+    }
+
     function getDeposit() public view returns (uint256){
       return address(this).balance;
     }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ConnectEmbed } from "./thirdweb";
 import thirdwebIcon from "@public/thirdweb.svg";
 import { client } from "./client";
+import { Accountability } from "../../components/Accountability";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
               url: "https://example.com",
             }}
           />
+          <Accountability />
         </div>
 
         <ThirdwebResources />
